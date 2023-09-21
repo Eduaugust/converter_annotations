@@ -16,19 +16,21 @@ The script reads annotation data from a JSON file exported by the VIA tool, proc
 
 2. Install the required dependencies using the following command:
 
-pip install pillow
+   pip install pillow
+   
 Prepare your annotation data and images:
 
 Export annotation data from the VIA tool in JSON format.
 Place your annotation JSON file in the same directory as the script.
 Organize your images in a folder and specify its path in the image_source variable in the script.
-
 Run the script using the following command:
 
 python convert_annotations.py
 This will generate YOLOv8 style annotation files and organize the images in the output folders.
 
 Check the train/labels and train/images folders for the converted annotations and corresponding images.
+
+Additionally, you have a new script called vgg2pngSeg, which can be used for a different purpose. Make sure to check its functionality and instructions in the script file.
 
 Configuration
 json_file_path: Path to the JSON file containing annotation data.
